@@ -16,8 +16,6 @@ if (config.use_env_variable) {
   sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
 
-const User = require('./user'); // User 클래스를 먼저 가져옴
-const Comment = require('./comment'); // Comment 클래스를 먼저 가져옴
 
 fs
   .readdirSync(__dirname)
