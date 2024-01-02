@@ -4,7 +4,9 @@
   "description": "익스프레스로 만드는 SNS 서비스",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app"
+    "start": "nodemon server",
+    "test": "jest",
+    "coverage": "jest --coverage"
   },
   "author": "ZeroCho",
   "license": "MIT",
@@ -26,6 +28,7 @@
   },
   "devDependencies": {
     "jest": "^29.7.0",
-    "nodemon": "^2.0.3"
+    "nodemon": "^2.0.3",
+    "supertest": "^6.3.3"
   }
 }
